@@ -77,7 +77,8 @@ public class HDT6 {
 		}
                 
                 if(opcion.equals("SUB")){
-                    System.out.println("Ingrese sub");                    
+                    System.out.println("Ingrese sub");        
+                    calculos.SUB();
                 }
                 
                 if(opcion.equals("BIG")){
