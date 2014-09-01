@@ -4,22 +4,27 @@
 * Ing. Douglas Barrios
 * Miembros:
 * - Kuk Ho Chung 13279
-* - Aaron Giron 13
+* - Aaron Giron 13042
 */
 
 package hdt6;
 
+import java.util.Set; 
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
 public class FactoryHsh<E> {
     
-    public InterfaceStack<E> getStack(String entry){
+    public Set getSet(String entry){
         if(entry.equals("HS"))
-            return new Hash<E>();
-        if(entry.equals(TR))
-            return new Tree<E>();
-        if(entry.equals("HLi"))
-            return new HashLi<E>();
-        else{
-            return ("Porfavor ingrese de nuevo");
+            return new HashSet<E>();
+        if(entry.equals("TR"))
+            return new TreeSet<E>();
+        if(entry.equals("LHS")){
+            return new LinkedHashSet<E>();
+        }else{
+            return null;            
         }
     }
 }

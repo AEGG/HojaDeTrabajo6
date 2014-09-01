@@ -4,7 +4,7 @@
 * Ing. Douglas Barrios
 * Miembros:
 * - Kuk Ho Chung 13279
-* - Aaron Giron 13
+* - Aaron Giron 13042
 */
 
 package hdt6;
