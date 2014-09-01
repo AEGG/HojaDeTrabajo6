@@ -81,7 +81,8 @@ public class HDT6 {
                 }
                 
                 if(opcion.equals("BIG")){
-                    System.out.println("Ingrese big");                     
+                    System.out.println("El tamanio del conjunto de desarrolladores mas grande son: ");
+                    calculos.BIG();
                 }
                 
                 if(opcion.equals("SLS")){

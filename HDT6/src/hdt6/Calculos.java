@@ -18,6 +18,14 @@ import java.util.Arrays;
 public class Calculos {
     Set DevJava, DevWeb, DevPhone, convergence, SET;
     
+    public void viewer(Set SET){
+        String[] array=new String[SET.size()];
+        array=(String[])SET.toArray(new String[0]);
+        for(int i=0;i<SET.size();i++){
+            System.out.println(array[i]);
+        }    
+    }
+    
     public void INDatos(String nombre, String tipo){
         if(tipo.equals("J")){
             DevJava.add(nombre);
@@ -78,4 +86,24 @@ public class Calculos {
         }
     }
     
+    public void BIG(){
+        int scale1, scale2, scale3;
+        scale1 = DevJava.size();
+        scale2 = DevWeb.size();
+        scale3 = DevPhone.size();
+        
+        if(scale1>scale2){
+            if(scale1>scale3){
+                System.out.println("Los desarrolladores de Java ocupa mayor tamanio de conjunto");
+                viewer(DevJava);
+            }
+            if(scale1<scale3){
+                System.out.println("Los desarrolladores de Celulares ocupa mayor tamanio de conjunto");
+                viewer(DevPhone);
+            }else{
+                System.out.println("Los desarrolladores de Web ocupa mayor tamanio de conjunto");    
+                viewer(DevWeb);
+            }
+        }
+    }
 }
