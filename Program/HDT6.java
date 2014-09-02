@@ -7,8 +7,6 @@
 * - Aaron Giron 13042
 */
 
-package hdt6;
-
 import java.util.Scanner;
 
 public class HDT6 {
