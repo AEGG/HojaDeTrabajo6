@@ -38,12 +38,6 @@ public class Main {
 		}
 		
 		
-	
-		
-		if (opcion.equals("no")){
-			System.exit(1); 
-		}
-		
 		
 	}	
 	
