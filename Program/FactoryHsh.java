@@ -7,12 +7,17 @@
 * - Aaron Giron 13042
 */
 
-
+/*
+* Importando las librerias para los conjuntos
+*/
 import java.util.Set; 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.TreeSet;
 
+/*
+* Clase de la fabrica para implementar cierta funcion de los conjuntos
+*/
 public class FactoryHsh<E> {
     
     public Set getSet(String entry){

@@ -13,9 +13,15 @@ import java.util.TreeSet;
 import java.util.LinkedHashSet;
 import java.util.Arrays;
 
-public class Calculos {
+	/*
+	*Clase de las operaciones entre los conjuntos del programa
+	*/
+public class Calculos { 
     Set DevJava, DevWeb, DevPhone, subconjunto ,Convergence, SET;
     
+	/* 
+	*Muestra el resultado de los conjuntos dependiendo de la opcion seleccionado
+	*/
     public void viewer(Set SET){
         String[] array=new String[SET.size()];
         array=(String[])SET.toArray(new String[0]);
@@ -24,6 +30,9 @@ public class Calculos {
         }    
     }
     
+	/* 
+	*Opcion para escoger cual conjunto a utilizar a traves de la fabrica
+	*/
     public void INDatos(String nombre, String tipo){
         switch(tipo){
             case "J":
@@ -38,6 +47,9 @@ public class Calculos {
         }
     }
     
+	/*
+	*Opcion y revision de las interacciones entre los conjuntos
+	*/
     public void Convergence(int counter){
         if(counter==1){
             Convergence = DevJava;
@@ -66,6 +78,9 @@ public class Calculos {
         }
     }
     
+	/*
+	*Compara cual intersecicon tiende a tener mayor cantidad de elementos intersectados
+	*/
     public void BIG(){
         int scale1, scale2, scale3;
         scale1 = DevJava.size();
@@ -87,6 +102,9 @@ public class Calculos {
         }
     }
     
+	/*
+	*Verifica si los desarrolladores de Java son parte de subconjunto de desarrolladores de Web
+	*/
     public void SUB(){
         boolean space;
         subconjunto = DevJava;
