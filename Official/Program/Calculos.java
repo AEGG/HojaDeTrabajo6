@@ -31,7 +31,8 @@ public class Calculos {
     }
     
 	/* 
-	*Opcion para escoger cual conjunto a utilizar a traves de la fabrica
+	*Opcion para escoger cual conjunto a utilizar a traves del Factory
+	* Metodo Switch, basado en ejemplo encontrado en : http://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Java/Sentencia_switch, para una mejor manera de escoger la implementacion.
 	*/
     public void INDatos(String nombre, String tipo){
         switch(tipo){
